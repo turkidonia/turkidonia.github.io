@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Votre Nom - Développeur Web</title>
+    
+</head>
+<body>
+    <header>
+        <h1>turki donia</h1>
+        <p>conceptrice développeuse d'application</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#experience">Expérience</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="about">
+            <h2>À propos de moi</h2>
+            <p>Présentez-vous brièvement ici...</p>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2>Compétences</h2>
+            <div class="skill-bar">
+                <div class="skill" style="width:90%; background-color: #4CAF50;">HTML/CSS 90%</div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill" style="width:85%; background-color: #2196F3;">JavaScript 85%</div>
+            </div>
+            <!-- Ajoutez d'autres compétences ici -->
+        </section>
+
+        <section id="experience" class="experience">
+            <h2>Expérience professionnelle</h2>
+            <h3>Développeur Web - Entreprise XYZ</h3>
+            <p>Janvier 2020 - Présent</p>
+            <ul>
+                <li>Responsabilité 1</li>
+                <li>Responsabilité 2</li>
+            </ul>
+            <!-- Ajoutez d'autres expériences ici -->
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Projets</h2>
+            <h3>Nom du projet</h3>
+            <p>Description du projet...</p>
+            <a href="#">Lien vers le projet</a>
+            <!-- Ajoutez d'autres projets ici -->
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: belhoulaturki.donia@gmail.com</p>
+            <p>Téléphone: +33 761490333</p>
+            <p>LinkedIn: <a href="www.linkedin.com/in/donia-turki">Mon profil LinkedIn</a></p>
+            <p>GitHub: <a href="doniabel83">Mon profil GitHub</a></p>
+        </section>
+    </div>
+
+    <script>
+        // Vous pouvez ajouter du JavaScript ici pour des fonctionnalités interactives
+        // Par exemple, un smooth scroll pour la navigation :
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

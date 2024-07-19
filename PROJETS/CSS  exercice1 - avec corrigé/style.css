@@ -1,0 +1,53 @@
+
+.container {
+    width: 600px;
+	margin : 0 auto;
+}	
+body {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    background-color: bisque;
+
+    
+}
+
+#child1{
+    background-color: red;
+    color: white;
+    padding: 40px;
+    text-align: center;
+   
+}
+
+#child2{
+    background-color: blue;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    
+}
+
+#child3{
+    background-color: yellow;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    
+}
+
+#child4{
+    background-color: pink;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    
+}
+
+.child {
+   text-transform: uppercase; 
+   font-size: 32px;
+   font-weight: bold; 
+}
+

@@ -3,70 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/style.css">
-    <title>Votre Nom - Développeur Web</title>
+    <title>TURKI DONIA - Développeuse Web</title>
     
 </head>
 <body>
-    <header>
-        <h1>turki donia</h1>
-        <p>conceptrice développeuse d'application</p>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#about">À propos</a></li>
-            <li><a href="#skills">Compétences</a></li>
-            <li><a href="#experience">Expérience</a></li>
-            <li><a href="#projects">Projets</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
     <div class="container">
-        <section id="about">
-            <h2>À propos de moi</h2>
-            <p>Présentez-vous brièvement ici...</p>
-        </section>
-
-        <section id="skills" class="skills">
-            <h2>Compétences</h2>
-            <div class="skill-bar">
-                <div class="skill" style="width:90%; background-color: #4CAF50;">HTML/CSS 90%</div>
+        <header>
+            <div class="name">
+                <img src="https://img-wixmp-fe53c9ff592a4da924211f23.wixmp.com/users/0d808c4e-6018-4f79-8a7d-3674206a2fd5/design-previews/df20eeba-4ed8-47f5-a435-a81f90aac0b2/1721225584804-sample.jpeg?filename=Preview.png" alt="monlogo">
+                <h1><a href="">turki donia</a></h1>
             </div>
-            <div class="skill-bar">
-                <div class="skill" style="width:85%; background-color: #2196F3;">JavaScript 85%</div>
+
+            <div class="navbar">
+                <ul>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#experience">Expériences</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
-            <!-- Ajoutez d'autres compétences ici -->
-        </section>
+            
+            <div class="entree">
+                <h1>vous recherchez une développeuse full stack?</h1>
+                <p>Découvrez mon site portfolio et plongez dans un univers où créativité et professionalisme se rencontrent!</p>
+            </div>
+            
+            <div class="fleche">
+                <a href=""><img src="./favicon/fleche.svg" alt="fleche en bas"/></a>
+            </div>
+        </header>
+        
 
-        <section id="experience" class="experience">
-            <h2>Expérience professionnelle</h2>
-            <h3>Développeur Web - Entreprise XYZ</h3>
-            <p>Janvier 2020 - Présent</p>
-            <ul>
-                <li>Responsabilité 1</li>
-                <li>Responsabilité 2</li>
-            </ul>
-            <!-- Ajoutez d'autres expériences ici -->
-        </section>
+        <main>
+        
+            <section class="about">
+                <h1>À propos</h1>
+                <p>Conceptrice développeuse d'application juniore, je suis dynamique et j'aime travailler en équipe pour relever des challenges techniques. J'ai une bonne maitrise des outils de développemeznt et je suis en constante recherche d'apprentissage.
+                Découvrez-en plus mon profil lors d'une rencontre!</p>
+            </section>
 
-        <section id="projects" class="projects">
-            <h2>Projets</h2>
-            <h3>Nom du projet</h3>
-            <p>Description du projet...</p>
-            <a href="#">Lien vers le projet</a>
-            <!-- Ajoutez d'autres projets ici -->
-        </section>
+            <section class="skills">
+                <h2>Compétences</h2>
+                
+            </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
+            <section class="experience">
+                <p>Télechargez mon CV</p>
+                <a href="cv.pdf"><input type="text" value="cliquer ici"></a>
+            </section>
+
+            <section class="projects">
+                <h2>Projets</h2>
+                <div class="projet1"></div>
+                <div class="projet2"></div>
+                <div class="projet3"></div>
+                <div class="projet4"></div>
+            </section>
+
+            <section class="contact">
+                <h2>Contact</h2>
+                <form action="/ma-page-de-traitement" method="post">
+                    <ul>
+                      <li>
+                        <label for="name">Nom&nbsp;:</label>
+                        <input type="text" id="name" name="user_name" />
+                      </li>
+                      <li>
+                        <label for="mail">E-mail&nbsp;:</label>
+                        <input type="email" id="mail" name="user_mail" />
+                      </li>
+                      <li>
+                        <label for="msg">Message&nbsp;:</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                      </li>
+                    </ul>
+                  </form>
+                  
+                
+            </section>
+        </main>
+        <footer>
             <p>Email: belhoulaturki.donia@gmail.com</p>
-            <p>Téléphone: +33 761490333</p>
-            <p>LinkedIn: <a href="www.linkedin.com/in/donia-turki">Mon profil LinkedIn</a></p>
-            <p>GitHub: <a href="doniabel83">Mon profil GitHub</a></p>
-        </section>
-    </div>
+                <p>Téléphone: +33 761490333</p>
+                <p>LinkedIn: <a href="www.linkedin.com/in/donia-turki">Mon profil LinkedIn</a></p>
+                <p>GitHub: <a href="doniabel83"><img src="./iconsvg/github.svg" alt="">
+                </a></p>
+        </footer>
 
     <script>
         // Vous pouvez ajouter du JavaScript ici pour des fonctionnalités interactives
@@ -80,5 +110,6 @@
             });
         });
     </script>
+    </div>
 </body>
 </html>

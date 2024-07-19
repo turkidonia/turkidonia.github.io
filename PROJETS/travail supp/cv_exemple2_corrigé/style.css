@@ -1,0 +1,225 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/**********************************
+Layout
+***********************************/
+
+.container {
+    width: 1000px;
+    margin : 0 auto;
+}
+
+aside {
+    float: left;
+    width: 30%;
+    background-color: #f5f5f5;
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+
+main {
+    float: right;
+    width: 70%;
+    padding-top: 100px;
+}
+
+
+
+/**********************************
+Typographie
+***********************************/
+/*
+ On aurait pu mettre text-transform 2 fois, une fois dans h1 et l'autre dans h2
+ L'optimisation ici n'est pas flagrante mais c'est juste pour vous 
+ remontrer comment utiliser la combinaison de sélecteur avec la virgule
+ (qui veut dire "et") 
+*/
+h1,h2 {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 14px;
+    color : #7f7f7f;
+}
+
+p {
+    color : #828282;
+    font-size : 14px;
+    line-height: 20px;
+}
+
+/**********************************
+Aside / Blocs 
+***********************************/
+
+/* Photo */
+
+#photo {
+    width: 60%;
+    margin : 0 auto;
+}
+
+/*
+    C'est ici que l'on arrondi la photo
+*/
+#photo img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* Nom */
+#name {
+    margin-top : 60px;
+    padding : 20px 30px 20px 40px;
+    text-align: center;
+}
+
+#name h1 {
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#name h3 {
+    text-transform: uppercase;
+}
+
+/* Contact */
+
+#contact {
+    margin-top : 30px;
+    padding : 20px 30px 20px 40px;
+    font-size: 12px;
+    text-align: center;
+}
+
+#contact h2 {
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/*
+    On a choisi ici de traiter les contacts avec une liste
+    On retire les puces d'origine avec list-style : none
+*/
+#contact ul{
+    list-style: none;
+    text-align: left;
+    padding: 0 20px;
+}
+
+#contact ul li{
+    padding: 10px 0;
+    color : #828282;
+}
+
+#contact ul li .contact-icon{
+    vertical-align: middle;
+    padding-right: 10px;
+    color : black;
+}
+/* Profile */
+
+#profile {
+    margin : 60px 0;
+    padding : 20px 30px 20px 40px;
+    text-align: center;
+}
+
+#profile h2 {
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#profile p {
+    text-align: left;
+    padding: 0 20px;
+}
+
+
+/* Social network */
+
+#social {
+    margin-top : 180px;
+    padding : 20px 30px 20px 40px;
+    text-align: center;
+}
+
+#social li {
+    display: inline;
+    font-size: 12px;
+}
+
+#social li.social-icon {
+    padding : 0 5px ;
+}
+
+#social .social-icon img {
+    width: 16px ;
+}
+
+
+/**********************************
+Main / Blocs 
+***********************************/
+
+/* Main bloc */
+
+.main-bloc {
+    padding: 20px 70px;
+}
+
+.main-bloc h2 {
+    width: 50%;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.main-bloc .main-bloc-content {
+    padding-left: 40px;
+    margin-bottom : 40px;
+}
+
+.main-bloc .main-bloc-content h4{
+    font-size : 14px;
+    color : #828282;
+}
+
+.main-bloc .main-bloc-content p{
+    margin : 20px 0;
+}
+
+/* Language */
+
+.language {
+    padding-left: 40px;
+}
+
+.language span{
+    font-size : 16px;
+    color : black;
+}

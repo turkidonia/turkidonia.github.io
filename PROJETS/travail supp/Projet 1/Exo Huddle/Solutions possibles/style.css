@@ -1,0 +1,105 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background-color: hsl(257, 40%, 49%);
+	background-image: url("images/bg-desktop.svg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	max-width: 1440px;
+	margin: auto;
+	margin-top: 50px;
+}
+
+section{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 50px 0 50px 0;
+}
+
+.image{
+	background-image: url("images/illustration-mockups.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-width: 375px;
+	width: 60%;
+}
+
+.text{
+	width: 40%;
+	min-width: 275px;
+	color: white;
+	font-family: "Open Sans";
+	font-size: 1.5rem;
+}
+
+h1{
+	font-family: "Poppins";
+	font-size: 2.7rem;
+}
+
+button{
+	background-color: white;
+	color: hsl(257, 40%, 49%);
+	padding: 20px 80px 20px 80px;
+	border-radius: 50px;
+	font-size: 1.7rem;
+	cursor: pointer;
+}
+
+button:hover{
+	background-color: hsl(300, 69%, 71%);
+	color: #FFF;
+}
+
+footer{
+	display: flex;
+	justify-content: flex-end;
+	gap:10px;
+}
+
+.reseaux{
+	font-size: 2rem;
+	width: 50px;
+	height: 50px;
+	padding: 15px 10px 5px 10px;
+	color:#FFF;
+	border: 2px solid #FFF;
+	border-radius: 50px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.reseaux:hover{
+	color: hsl(300, 69%, 71%);
+	border: 2px solid hsl(300, 69%, 71%);
+}
+
+
+@media (max-width: 375px){
+	body{
+		background-image: url("images/bg-mobile.svg");
+	}
+	
+	.image{
+		height: 200px;
+	}
+	
+	.text{
+		padding: 50px;
+		font-size: 1rem;
+	}
+	
+	h1{
+		font-size: 1.5rem;
+	}
+}

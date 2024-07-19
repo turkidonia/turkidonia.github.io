@@ -1,0 +1,7 @@
+.dark {
+    width: 100%;
+    padding: 25px;
+    background: linear-gradient(45deg, pink, red, yellow);
+    color: white;
+    font-size: 25px;
+  }

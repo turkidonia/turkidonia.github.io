@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        Les 3 balises suivantes viennent de Google Font. Elles nous permettent
+        d'utiliser la typogrpahie Montserrat.
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <!-- 
+        Il est possible d'utliser le fichier reset.css suivant pour "remettre à zéro"
+        les styles par défaut des navigateurs. Le contenu de cette feuille de style
+        vient du site : https://meyerweb.com/eric/tools/css/reset/
+    -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 
+        LA structure que vous connaissez par ❤️ maintenant ! Le container centre la page, 
+        un aside + un main avec des float (en attendant de connaître les flex)
+        A l'intérieur de chaque colonne, on travail avec des blocs.
+    -->
+    <div class="container">
+        <aside>
+
+            <!-- 
+                Le bloc photo. Vous vous demandez comment on met une photo dans un cercle ?
+                La réponse dans les CSS #photo img. Un indice : border-radius !
+            -->
+            <div id="photo">
+                <img src="images/image.png" alt="">
+            </div>
+            <div id="name">
+                <h1>Sarah Walton</h1>
+                <h3>Industrial designer</h3>
+            </div>
+            <div id="contact">
+                <h2>Contact</h2>
+                <ul>
+                    <li>
+                        <!-- 
+                            J'ai utilisé ici les icones de Material Design. On peut utiliser la 
+                            librairie que l'on veut.
+                            La syntaxe suivante (span.material-symbols-outlined) est propre à Material
+                            Plus d'infos ici : https://developers.google.com/fonts/docs/material_symbols?hl=fr
+                            La classe contact-icon c'est par contre moi qui l'ai rajouté.
+                            Allez jeter un oeil dans le CSS (#contact ul li .contact-icon). Elle me 
+                            permet de centrer verticalement, modifier la couleur et mettre un peu de marge
+                            à droite.
+                        -->
+                        <span class="material-symbols-outlined contact-icon">
+                            perm_phone_msg
+                        </span>
+                        06 06 06 06 06 
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined contact-icon">
+                            mail
+                        </span>
+                        sarawalton@gmail.com
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined contact-icon">
+                            desktop_windows
+                        </span>
+                        sarawalton.com
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined contact-icon">
+                            home
+                        </span>
+                        Main street # 32
+                    </li>
+                </ul>
+            </div>
+            <div id="profile">
+                <h2>Profile</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quas consequuntur vel amet impedit.
+                </p>
+            </div>
+            <div id="social">
+                <!-- 
+                    Ici j'ai utilisé une liste. Cela nous permet de voir comment la propriété inline de 
+                    display nous permet de faire des listes horizontales avec CSS (#social li)
+                    Comme toujours ce n'est pas la seule méthode !
+                -->
+                <ul>
+                    <li class="social-icon">
+                        <img src="images/twitter.png" alt="">
+                    </li>
+                    <li class="social-icon">
+                        <img src="images/facebook-app-symbol.png" alt="">
+                    </li>
+                    <li class="social-icon">
+                        <img src="images/linkedin.png" alt="">
+                    </li>
+                    <li>sarawalton92</li>
+                </ul>
+            </div>
+        </aside>
+        <main>
+            <!-- 
+                Rien de nouveau ici pour vous ! Vous maitrisez l'usage des classes, etc... 🤘!
+            -->
+            <div class="main-bloc">
+                <h2>Work Experience</h2>
+                <div class="main-bloc-content">
+                    <h3>Art Director</h3>
+                    <h4>Company name | 2020</h4>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quas consequuntur vel amet impedit.
+                    </p>
+                </div>
+                <div class="main-bloc-content">
+                    <h3>Art Director</h3>
+                    <h4>Company name | 2020</h4>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quas consequuntur vel amet impedit.
+                    </p>
+                </div>
+                <div class="main-bloc-content">
+                    <h3>Art Director</h3>
+                    <h4>Company name | 2020</h4>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quas consequuntur vel amet impedit.
+                    </p>
+                </div>
+ 
+            </div>
+
+            <div class="main-bloc">
+                <h2>Education</h2>
+                <div class="main-bloc-content">
+                    <h3>Master degree</h3>
+                    <h4>University name | 2020-2021</h4>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quas consequuntur vel amet impedit.
+                    </p>
+                </div>
+                <div class="main-bloc-content">
+                    <h3>Master degree</h3>
+                    <h4>University name | 2020-2021</h4>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quas consequuntur vel amet impedit.
+                    </p>
+                </div>
+                <div class="main-bloc-content">
+                    <h3>Master degree</h3>
+                    <h4>University name | 2020-2021</h4>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quas consequuntur vel amet impedit.
+                    </p>
+                </div>
+ 
+            </div>
+                <!-- 
+                    Rien de compliqué non plus ! 
+                    Jetez juste un oeil au span qui permet de mettre en avant la langue
+                    avec le style .language span
+                -->
+            <div class="main-bloc">
+                <h2>Languages</h2>
+                <p class="language">
+                    <span>English</span> - Native
+                </p>
+                <p class="language">
+                    <span>Spanish</span> - Professionnal
+                </p>
+                <p class="language">
+                    <span>Italian</span> - Basic
+                </p>
+                <p class="language">
+                    <span>Mandarin</span> - Basic
+                </p>
+ 
+            </div>
+
+        </main>
+    </div>
+</body>
+</html>

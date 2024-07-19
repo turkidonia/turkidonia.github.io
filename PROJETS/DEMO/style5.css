@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: blue;
+    padding: 15px 30px;
+        
+}
+
+.main1 h1::first-letter {
+    text-transform: capitalize;
+    
+}
+
+.main1{
+    width: 50%;
+    background-color: aqua;
+}
+
+.main1 h1{
+    padding: 20px 40px 10px 20px;
+    background-color: rgb(159, 196, 13);
+    margin: 20px;
+}
+
+.main1 p{
+    margin: 20px;
+    background-color: azure;
+    padding: 20px;
+}
+
+.main1 button{
+    padding: 10px 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    background-color: bisque;    
+}
+
+a {
+    text-decoration: none;    
+}
+
+button::first-letter {
+    text-transform: capitalize;
+}

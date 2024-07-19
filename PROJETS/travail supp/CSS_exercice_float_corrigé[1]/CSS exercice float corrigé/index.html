@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        Si vous voulez intégrer le reset.css 
+        pour "remettre à zéro" les styles
+        par défaut des navigateurs, 
+        insérez la ligne suivante, juste
+        avant votre propre feuille de style
+        <link rel="stylesheet" href="reset.css">    
+    -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 
+        Le div avec la classe container nous 
+        permet de l'appeller dans la feuille de 
+        style pour centre l'ensemble du contenu
+    -->
+    <div class="container">
+        <!--
+
+            On utilise au maximum les balises 
+            sémantiques :
+            header, section, main, aside...
+            à la place des divs quand cela permet
+            de "donner du sens" à la structure
+            de notre code.            
+        -->
+        <header> Mon site </header>
+        <section>
+            <main id="colonne_gauche">
+                Contenu principal
+            </main>
+            <aside id="colonne_droite">
+                <div id="droite_1">
+                    aside - Bloc 1
+                </div>
+                <div id="droite_2">
+                    aside - Bloc 2
+                </div>
+                <div id="droite_3">
+                    aside - Bloc 3
+                </div>
+
+            </aside>
+        </section>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>

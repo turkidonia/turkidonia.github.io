@@ -1,0 +1,36 @@
+*{
+   margin:0;
+}
+html{
+   font-size: 10px;
+}
+
+
+.stylo{
+   width: 200px;
+   height: 200px;
+   border: solid;
+}
+#fromage{
+background-color: indigo;
+}
+#sandwich{
+background-color: blue;
+}
+.text{
+   font-size: 30px;
+   color: orange;
+}
+#cat{
+   font-style: italic;
+}
+#lettre{
+   color: red;
+}
+@media screen (max-width: 960px){
+   html{
+      font-size: 5px;
+
+      
+   }
+}

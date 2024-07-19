@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.contenair{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.bloc{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    border: solid 2px rgb(230, 22, 137);
+}
+.bulle{
+    border-radius: 100%;
+}
+nav{
+    width: 100vw;
+    height: 10vh;
+    background-color: coral;
+}
+.enfant{
+    width: 50%;
+    height: 100%;
+    background-color: aquamarine;
+}

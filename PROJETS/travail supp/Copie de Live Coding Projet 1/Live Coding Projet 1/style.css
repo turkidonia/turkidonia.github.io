@@ -1,0 +1,78 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Variables */
+:root {
+  --my-red: #ff5e00;
+  --my-blue: #00d8ff;
+  --my-purple: #ff00dd;
+  --my-yellow: #ffe400;
+  --my-green: #99e000;
+  --my-gray: #5d5d5d;
+  --my-white: #ffffff;
+}
+
+/* Fonts */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Layout */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background: var(--my-red);
+  height: 80px;
+  margin-bottom: 1em;
+}
+
+/* Sections */
+section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1em;
+}
+.left {
+  background: var(--my-blue);
+  height: 500px;
+}
+
+/* Aside */
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.right-1 {
+  background: var(--my-purple);
+}
+.right-2 {
+  background: var(--my-yellow);
+}
+.right-1,
+.right-2 {
+  height: 150px;
+}
+.right-3 {
+  background: var(--my-green);
+  height: 170px;
+}
+
+/* Footer */
+footer {
+  background: var(--my-gray);
+  height: 100px;
+  margin-top: 1em;
+  color: var(--my-white);
+}

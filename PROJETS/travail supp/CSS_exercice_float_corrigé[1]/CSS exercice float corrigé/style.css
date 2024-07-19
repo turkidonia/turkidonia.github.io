@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*******************************
+Le container nous permet de centrer
+notre design dans la page.
+On en profite pour centrer les
+textes et les passer en blanc pour
+la totalité de la page.
+*******************************/
+.container {
+    width: 1000px;
+    margin : 0 auto;
+    text-align: center;
+    color : white;
+}
+
+/********************************
+Pour le header, rien de particulier...
+********************************/
+header {
+    background-color: #FF5E00;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+/********************************
+La ligne importante ici, c'est le
+clear : both;
+Ce qui permet de ne pas faire
+"flotter" notre footer...
+********************************/
+
+footer {
+    background-color: #5D5D5D;
+    height : 100px;
+    clear : both;
+}
+
+/********************************
+La colonne de gauche... flotte
+à gauche...
+********************************/
+
+#colonne_gauche {
+    width: 600px;
+    height: 500px;
+    background-color: #00D8FF;
+    float : left;
+    margin-bottom: 10px;
+}
+
+/********************************
+...et la colonne de droite... 
+flotte à droite...
+********************************/
+
+#colonne_droite {
+    width: 380px;
+    height: 500px;
+    float : right;
+}
+
+/********************************
+Maintenant que tout est en place,
+il n'y a plus qu'a placer et 
+dimensionner les 3 blocs de la 
+colonne de droite !
+********************************/
+#droite_1 {
+    background-color: #FF00DD;
+    width: 380px;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+#droite_2 {
+    background-color: #FFE400;
+    width: 380px;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+#droite_3 {
+    background-color: #99E000;
+    width: 380px;
+    height: 170px;
+}
+

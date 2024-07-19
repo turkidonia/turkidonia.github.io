@@ -1,0 +1,47 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: lightgrey;
+}
+
+#layer1 p{
+    background-color: red;
+    /* ou en hexadécimal : color : #FF0000; */
+}
+
+#layer2 p{
+    background-color: blue;
+}
+
+#layer3 p{
+    background-color: yellow;
+}
+
+#layer4 p{
+    background-color: pink;
+}
+
+/******************************************
+Il n'y a pas une seule méthode pour 
+ajouter la couche blanche. Ici on utilise
+la propriété border pouor y parvenir.
+*****************************************/
+
+.layer p {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color : white;
+    padding : 80px;
+    margin : 0;
+    border-bottom: 20px solid white;
+}
+
+/******************************************
+Et pour être précis, on enlève la bordure 
+sur le dernier élément
+*****************************************/
+#layer4 p {
+    border : 0;
+}
+

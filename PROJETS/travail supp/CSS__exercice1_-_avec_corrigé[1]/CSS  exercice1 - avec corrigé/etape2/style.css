@@ -1,0 +1,32 @@
+/********************************************* 
+Voici notre Google Font. N'oubliez pas les 
+balises link dans le head de votre page html !              
+*********************************************/
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.layer p {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+#layer1 p {
+    color: red;
+    /* ou en hexadécimal : color : #FF0000; */
+}
+
+#layer2 p {
+    color: blue;
+}
+
+#layer3 p {
+    color: yellow;
+}
+
+#layer4  p{
+    color: pink;
+}
+

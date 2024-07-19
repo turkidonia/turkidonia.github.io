@@ -1,0 +1,39 @@
+
+*{
+    margin: 0;
+}
+body {
+width: 1000px;
+margin: 0 auto;
+font-family: "Playwrite ES Deco", cursive;
+}
+h1{
+    color: rgb(6, 126, 126);
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: blanchedalmond;
+    text-align: center;
+}
+h2{
+    color: rgb(30, 8, 171);
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: rgb(247, 150, 4);
+    text-align: center;
+}
+img{
+    display: block;
+    margin: 0 auto;
+    width: 1000px;
+}
+p{
+    text-align: justify;
+    background-color: rgb(254, 227, 250);
+}
+article p{
+    text-align: center;
+}
+a{
+    text-align: center;
+    font-size: large;
+}

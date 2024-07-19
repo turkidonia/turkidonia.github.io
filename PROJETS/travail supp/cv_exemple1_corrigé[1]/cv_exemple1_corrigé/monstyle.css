@@ -1,0 +1,270 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+/*******************************
+Layout : 
+Les styles qui donnent la 
+structure globales de la page
+********************************/
+
+/*******************************
+Le container permet de centrer
+la page dans le navigateur
+********************************/
+.container {
+    width: 1000px;
+    /*
+        Ici, on peut utiliser max-width à la 
+        place de width pour un contenu flexible;
+        Mais la mise en page va se dégrader assez
+        vite.
+        Pour faire mieux, il faudra utiliser des
+        media queries que vous apprendrez bientôt !
+        A suivre !!!!
+    */
+    margin : 0 auto;
+}
+
+/*******************************
+On place nos deux colonnes côte
+à côte avec float.
+Vous verrez bientôt d'autres
+méthodes !
+********************************/
+aside {
+    background-color: #212026;
+    float: left;
+    width: 30%;
+}
+
+main {
+    float: right;
+    width: 70%;
+}
+
+/*******************************
+TYPOGRAPHIE
+On met en place les styles
+de nos niveau de titre
+********************************/
+h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+p{
+    line-height: 20px;
+}
+
+/*******************************
+ASIDE
+Style des blocs de la colonne
+latérale
+********************************/
+aside {
+    color : white;
+    padding-bottom: 50px;
+}
+
+#photo img {
+    width: 100%;
+}
+
+.text_bloc {
+    padding-left: 40px;
+    margin: 60px 0;
+}
+
+.text_bloc h2 {
+    border-bottom: 1px solid #fecb00;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.text_bloc .education_bloc {
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+.text_bloc .education_bloc h3{
+    margin : 5px;
+    font-weight: bold;
+}
+.text_bloc .education_bloc p {
+    font-size: 14px;
+    margin: 5px;
+}
+
+/*******************************
+Le bloc Aside > Contact
+********************************/
+
+.info-contact-title {
+    background-color: #fecb00;
+}
+
+.info-contact-title h4 {
+    margin-left: 40px;
+    padding: 5px 10px ;
+    background-color: #292a2f;
+    font-weight: bold;
+}
+
+.info-contact p {
+    padding: 5px 10px 20px 50px;
+    font-size: 14px;
+}
+
+/*******************************
+MAIN
+Styles des blocs de la colonne
+principale
+********************************/
+
+/*******************************
+Les styles de l'entête : 
+Main > Header
+********************************/
+header {
+    background-color: #fecb00;
+    color : #2d2d2d;
+    padding : 40px 40px;
+    margin-top: 80px;
+}
+
+header h1 {
+    font-weight: normal;
+}
+
+header h1 .first-name {
+    font-weight: bold;
+}
+
+.professionnal-title {
+    margin : 10px 0;
+    text-transform: uppercase;
+}
+
+/*******************************
+Le bloc Main > About me
+********************************/
+#about-me {
+    margin-top: 30px;
+    padding : 10px 40px;
+
+}
+
+#about-me h2 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+}
+
+/*******************************
+Le bloc Main > Work 
+********************************/
+#work {
+    margin-top: 30px;
+    padding : 10px 40px;
+}
+
+#work h2 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+}
+
+/* Si vous regardez bien les deux styles précédents,
+ainsi que les deux premiers styles de #about-me, 
+vous ne trouvez pas que cela se ressemble beaucoup ?
+Il y a surement ici de la place pour améliorer le 
+code avec une classe...
+*/
+
+#work .work-year {
+    width: 30%;
+}
+
+#work .work-description {
+    width: 70%;
+    padding: 20px 0 30px;
+}
+#work .work-description h3 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+#work .work-description .job-company {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/*******************************
+Le bloc Main > Software skills 
+********************************/
+#skills {
+    padding : 10px 40px;
+}
+
+#skills h2 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+}
+
+#skills .skills-row {
+    margin-left: 180px;
+}
+
+#skills .skills-description {
+    display: inline-block;
+    width: 40%;
+    padding: 10px;
+}
+
+#skills .skills-description h4{
+    margin-bottom: 10px;
+}
+
+/*******************************
+Voici les CSS qui nous permettent
+de reproduire des barres de progression
+avec 2 div imbriqués.
+Simple, non ? 
+********************************/
+
+.progress-bar {
+    background-color: #cccccc ;
+}
+
+.progress-bar .bar {
+    height: 4px;
+    background-color: #2d2d2d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

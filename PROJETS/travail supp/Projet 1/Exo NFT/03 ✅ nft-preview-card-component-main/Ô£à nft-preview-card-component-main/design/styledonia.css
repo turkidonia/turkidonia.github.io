@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Outfit", sans-serif;
+   
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main{
+    width: 300px;
+    height: 80vh;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 2em rgb(6, 6, 6);
+    padding: 20px;
+              
+}
+
+
+.image{
+    background-image: url(../images/image-equilibrium.jpg);
+    width: 250px;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+main h1{
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+       
+}
+ span:hover{
+    color: aqua;
+}
+
+.description{
+   font-weight: 300;
+    color: hsl(215, 51%, 70%);
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.icone{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    gap: 50px
+}
+
+
+.date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.date p{
+    color: hsl(215, 51%, 70%); 
+    font-weight: 500;
+}
+.left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.number{
+font-weight: 600;
+color: hsl(178, 100%, 50%);
+}
+
+.ligne{
+    
+    color: hsl(0, 0%, 100%);
+    border-top: 1px solid white;
+    width: 200px;
+}
+
+img{
+    width: 40px;
+    height: 40px;
+    border: solid 1px white;
+    border-radius: 100%;
+    
+}
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+}
+.footer p{
+    color: hsl(215, 51%, 70%);
+}
+span{
+    color: white
+}
+.image:hover{
+    background-image: url(../images/icon-view.svg);
+    
+}
+@media screen and (max-width: 767px){
+    
+}

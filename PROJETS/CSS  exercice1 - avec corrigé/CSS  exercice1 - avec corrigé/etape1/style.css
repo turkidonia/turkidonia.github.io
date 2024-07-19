@@ -1,0 +1,56 @@
+/* Voici au passage comment on écrit un commentaire en CSS ! */
+
+/********************************************* 
+Avec un sélecteur de classe combiné 
+avec un sélecteur descendant de balise, 
+je peux cibler tous les texte en une fois ! 
+              
+                ¯\_(ツ)_/¯
+*********************************************/
+
+.layer p {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/********************************************* 
+Il y a souvent plusieurs manière de faire,
+mais certaines sont plus rapides. Par
+exemple, j'aurai pu obtenir le même résultat
+avec : 
+
+#layer1 p, #layer2 p, #layer3 p, #layer4 p {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+} 
+
+Dommage de se priver ce notre classe layer !
+              
+*********************************************/
+
+
+/********************************************* 
+Grâce au sélecteur d'identifiant, je peux 
+cibler chaque div individuellement 
+              
+*********************************************/
+
+#layer1 p {
+    color: red;
+    /* ou en hexadécimal : color : #FF0000; */
+}
+
+#layer2 p {
+    color: blue;
+}
+
+#layer3 p {
+    color: yellow;
+}
+
+#layer4  p{
+    color: pink;
+}
+

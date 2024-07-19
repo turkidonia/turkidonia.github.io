@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        Les 3 balises suivantes viennent de Google Font. Elles nous permettent
+        d'utiliser la typogrpahie Montserrat.
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- 
+        Il est possible d'utliser le fichier reset.css suivant pour "remettre à zéro"
+        les styles par défaut des navigateurs. Le contenu de cette feuille de style
+        vient du site : https://meyerweb.com/eric/tools/css/reset/
+    -->
+    <link rel="stylesheet" href="reset.css">
+    <!--
+        Voici le lien vers notre feuille de style.
+    -->
+    <link rel="stylesheet" href="monstyle.css">
+</head>
+<body>
+    <!-- 
+        Ce div englobe tout le contenu de la page. Avec la classe container
+        on peut centrer ce contenu et assigner des marges automatiques.
+    -->
+    <div class="container">
+        <!-- 
+            Notre design est construit autour de 2 colonnes principales.
+            Pour être plus pertinent on utilise des balises sémantiques
+            qui permettent de clarifier dans le code quelle est la colonne
+            latérale et quelle la colonne principale (aside et main).
+            Dans le CSS on utilise la propriété float pour cette mise en 
+            page à 2 colonnes, mais vous verrez bientôt des nouvelles 
+            propriétés plus performantes pour le même résultat (flex ou grid).
+            Donc même si vous ne l'utiliserez plus beaucoup c'est toujours 
+            intéressant de connaître le fonctionnement du float.
+        -->
+
+        <!-- 
+            Voici la colonne latérale située à gauche (float : left). Tout le
+            contenu de cette colonne est imbriquée dans la balise aside
+        -->
+        <aside>
+
+            <!-- 
+                A l'intérieur de la colonne, on traite chaque partie de contenu
+                comme un bloc, avec son propre div
+            -->
+
+            <!-- 
+                Et notre premier bloc est constitué seulement d'une image
+            -->
+            <div id="photo">
+                <img src="images/image.png" alt="">
+            </div>
+
+            <!-- 
+                Ensuite 2 blocs se suivent au design très similaire (c.a.d que seul
+                le contenu change, pas la mise en forme). Dans ces cas là, il 
+                est très utile de donner à ces blocs une classe qui permettra de 
+                traiter leur mise en forme en une seule fois.
+            -->
+
+            <!-- 
+                Le bloc "education" avec la classe .text_bloc
+            -->
+
+            <div class="text_bloc">
+                <h2>Education</h2>
+                <div class="education_bloc">
+                    <h3>Enter your major</h3>
+                    <p>baldj fjdk jkfld jfl</p>
+                    <p>2023 - 2024</p>
+                </div>
+                <div class="education_bloc">
+                    <h3>Enter your major</h3>
+                    <p>baldj fjdk jkfld jfl</p>
+                    <p>2023 - 2024</p>
+                </div>
+            </div>
+
+            <!-- 
+                Le bloc "reference" avec la classe .text_bloc
+            -->
+
+            <div class="text_bloc">
+                <h2>Référence</h2>
+                <div class="education_bloc">
+                    <h3>Enter your major</h3>
+                    <p>baldj fjdk jkfld jfl</p>
+                    <p>2023 - 2024</p>
+                </div>
+                <div class="education_bloc">
+                    <h3>Enter your major</h3>
+                    <p>baldj fjdk jkfld jfl</p>
+                    <p>2023 - 2024</p>
+                </div>
+            </div>
+
+            <!--
+                Pour faire plaisir à Anwar :-), on 
+                va afficher le petit bloc coloré sur 
+                la gauche. Pour cela, on doit avoir 
+                un deuxième div qui contient le titre h4. 
+                En donnant une couleur à .info-contact-title
+                et une marge à gauche à .info-contact-title,
+                on reproduit l'effet de ce petit bloc.
+            -->
+            <div id="contact">
+                <div class="info-contact">
+                    <div class="info-contact-title">
+                        <h4>Phone</h4>
+                    </div>
+                    <p>06 06 06 06 </p>
+                </div>
+                <div class="info-contact">
+                    <div class="info-contact-title">
+                        <h4>Email</h4>
+                    </div>
+                    <p>aaa@aaa.com</p>
+                </div>
+                <div class="info-contact">
+                    <div class="info-contact-title">
+                        <h4>Website</h4>
+                    </div>
+                    <p>www.site.com</p>
+                </div>
+                <div class="info-contact">
+                    <div class="info-contact-title">
+                        <h4>Adresse</h4>
+                    </div>
+                    
+                    <p>fjdks f dsfk djslf</p>
+                </div>
+
+            </div>
+
+        </aside>
+
+        <!-- 
+            Et notre colonne principale située à droite (float : right). Tout le
+            contenu de cette colonne est imbriquée dans la balise main
+        -->
+        <main>
+
+            <header>
+                <!-- 
+                    Ici on utilise un span pour avoir le nom en deux parties, 
+                    gras et non-gras que l'on va coder avec le CSS. On aurait
+                    pu utiliser la balise strong aussi.
+                -->
+                <h1><span class="first-name">Karen</span> Richards</h1>
+                <p class="professionnal-title">Professional Title</p>
+            </header>
+
+            <div id="about-me">
+                <h2>About me</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque amet quos ipsum illum illo itaque nisi autem deleniti deserunt soluta numquam veritatis, architecto asperiores nihil tempora obcaecati veniam est delectus.</p>
+            </div>
+
+            <div id="work">
+                <h2>Work experience</h2>
+                <!--
+                    Ici il y a plusieurs solutions pour la structure
+                    HTML de ces blocs. Dédicace à Lynda, on utilise
+                    un tableau :-)
+                -->
+                <table>
+                    <tr>
+                        <td class="work-year">2012-2014</td>
+                        <td class="work-description">
+                            <h3>Job description</h3>
+                            <p class="job-company">Company Name</p>
+                            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci laudantium at esse eveniet officiis aliquam. </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="work-year">2014-2017</td>
+                        <td  class="work-description">
+                            <h3>Job description</h3>
+                            <p class="job-company">Company Name</p>
+                            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem nesciunt facilis voluptatem.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="work-year">2017-Present</td>
+                        <td  class="work-description">
+                            <h3>Job description</h3>
+                            <p class="job-company">Company Name</p>
+                            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga ducimus sequi incidunt qui</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--
+                On aurait pu aussi utiliser un tableau ici. Mais c'était 
+                l'occasion de vous montrer l'usage de la propriété
+                display avec la valeur inline-block en CSS !
+                Regarder bien la structure : on utilise un div avec
+                une classe .skills-row pour pouvoir mettre de la marge
+                à gauche, puis chaque div avec la class .skills-description
+                est positionner avec display : inline-block.
+            -->
+            <div id="skills">
+                <h2>Software skills</h2>
+                <div class="skills-row">
+                    <div class="skills-description">
+                        <h4>Adobe photoshop</h4>
+                        <!--
+                            Il existe une balise progress en HTML qui 
+                            permet de réaliser des barres comme celle
+                            ci-dessous. Mais cela vous donne un exemple
+                            de comment le gérer juste avec des div.
+                            Et un des rares cas, où l'on va utiliser les
+                            styles directement dans l'attribut de la 
+                            balise HTML.
+                        -->
+                        <div class="progress-bar">
+                            <div class="bar" style="width:10%"></div>
+                        </div> 
+                    </div>
+                    <div class="skills-description">
+                        <h4>Adobe Microsoft Word</h4>
+                        <div class="progress-bar">
+                            <div class="bar" style="width:100%"></div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="skills-row">
+                    <div class="skills-description">
+                        <h4>Adobe Illustrator</h4>
+                        <div class="progress-bar">
+                            <div class="bar" style="width:30%"></div>
+                        </div> 
+                    </div>
+                    <div class="skills-description">
+                        <h4>Microsoft PowerPoint</h4>
+                        <div class="progress-bar">
+                            <div class="bar" style="width:40%"></div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="skills-row">
+                    <div class="skills-description">
+                        <h4>Adobe Indesign</h4>
+                        <div class="progress-bar">
+                            <div class="bar" style="width:20%"></div>
+                        </div> 
+                    </div>
+                    <div class="skills-description">
+                        <h4>HTML/CSS-3</h4>
+                        <div class="progress-bar">
+                            <div class="bar" style="width:80%"></div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+    
+</body>
+</html>

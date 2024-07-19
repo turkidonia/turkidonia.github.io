@@ -1,0 +1,56 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: lightgrey;
+}
+
+/******************************************
+Nous avons créer un nouveau div qui 
+englobe tout le "gateau". Maintenant on 
+peut le redimensionner et le centrer.
+Pour cela on profite de la valeur auto
+de la propriété margin (ici elle 
+s'applique à droite et à gauche).
+*****************************************/
+
+#cake {
+    max-width: 800px;
+    /*
+        esaayer ceci à la place
+        max-width : 800px;
+        Vous voyez la différence ?
+    */
+    margin : 0 auto;
+}
+
+#layer1 p{
+    background-color: red;
+    /* ou en hexadécimal : color : #FF0000; */
+}
+
+#layer2 p{
+    background-color: blue;
+}
+
+#layer3 p{
+    background-color: yellow;
+}
+
+#layer4 p{
+    background-color: pink;
+}
+
+.layer p {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color : white;
+    padding : 80px;
+    margin : 0;
+    border-bottom: 20px solid white;
+}
+
+#layer4 p {
+    border : 0;
+}
+

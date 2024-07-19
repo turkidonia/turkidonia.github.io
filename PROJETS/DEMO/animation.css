@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: pink;
+}
+.container{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin:150px;
+}
+.cercle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: aqua;
+    position:absolute
+}
+.anim-1{
+    margin-left: 80px;
+    animation: animation-1 2s infinite;
+    
+    
+}
+@keyframes animation-1 {
+    0% {}
+   
+    50% {margin-top: 160px}
+    
+    100%{
+        margin-top: 0;
+        background-color: blueviolet;
+    }
+}
+.anim-2{
+    margin-left: 80px;
+    animation: animation-2 2s infinite;
+   
+}
+@keyframes animation-2 {
+    0% { margin-left: 0}
+   
+    
+    
+    100%{
+        margin: 160px;
+        background-color: rgb(255, 0, 195);
+    }
+}
+.anim-3{
+    margin-left: 80px;
+    animation: animation-3 2s infinite;
+     
+    
+}
+@keyframes animation-3 {
+    0% {background-color: hsl(355, 100%, 54%)}
+    25%{margin-top: 0;
+        margin-left: 160px}
+    50%{margin-left: 0;
+    margin-top: 160px}
+    100%{margin-top: 160px;
+        margin-left: 160px
+    }
+}

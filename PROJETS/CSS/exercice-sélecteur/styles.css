@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+}
+
+#gold{
+    background-color: gold;
+}
+#indigo{
+    background-color: indigo;
+}
+.grande{
+    width: 100vw;
+    height: 100vh;
+}
+.petite{
+    background-color: purple;
+    width: 50%;
+    height: 50%;
+}
+.petite p{
+    font-size: 2rem;
+    text-align: center;
+}

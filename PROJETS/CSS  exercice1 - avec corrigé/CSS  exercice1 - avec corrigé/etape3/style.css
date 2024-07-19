@@ -1,0 +1,42 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: lightgrey;
+}
+
+#layer1 p{
+    background-color: red;
+    /* ou en hexadécimal : color : #FF0000; */
+}
+
+#layer2 p{
+    background-color: blue;
+}
+
+#layer3 p{
+    background-color: yellow;
+}
+
+#layer4 p{
+    background-color: pink;
+}
+
+/********************************************* 
+Nous changeons la couleur du texte qui est
+la même partout maintenant (blanc).
+Au passage on en profite pour centrer 
+le texte.
+Le padding (marge intérieure) nous permet de
+donner de l'épaisseur à nos couches, et 
+le margin (marge extérieure) est à 0 pour
+que les couches sont "collées" ! 
+*********************************************/
+
+.layer p {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color : white;
+    padding : 80px;
+    margin : 0;
+}

@@ -10,58 +10,80 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/style.css">
+    <script src="https://kit.fontawesome.com/ec6d3f21f9.js" crossorigin="anonymous"></script>
     <title>TURKI DONIA - Développeuse Web</title>
     
+    
+
 </head>
+
 <body>
     <div class="container">
         <header>
-            <div class="name">
-                <img src="https://img-wixmp-fe53c9ff592a4da924211f23.wixmp.com/users/0d808c4e-6018-4f79-8a7d-3674206a2fd5/design-previews/df20eeba-4ed8-47f5-a435-a81f90aac0b2/1721225584804-sample.jpeg?filename=Preview.png" alt="monlogo">
-                <h1><a href="">turki donia</a></h1>
-            </div>
-
             <div class="navbar">
-                <ul>
-                    <li><a href="#about">À propos</a></li>
-                    <li><a href="#skills">Compétences</a></li>
-                    <li><a href="#experience">Expériences</a></li>
-                    <li><a href="#projects">Projets</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+                <div class="logo">
+                    <img src="https://img-wixmp-fe53c9ff592a4da924211f23.wixmp.com/users/0d808c4e-6018-4f79-8a7d-3674206a2fd5/design-previews/df20eeba-4ed8-47f5-a435-a81f90aac0b2/1721225584804-sample.jpeg?filename=Preview.png" alt="monlogo">
+                
+                </div>
+
+                <div class="right">
+                    <ul>
+                        <li><a href="#about" class="nav-link">À propos</a></li>
+                        <li><a href="#skills" class="nav-link">Compétences</a></li>
+                        <li><a href="#experience" class="nav-link">Expériences</a></li>
+                        <li><a href="#projects" class="nav-link">Projets</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
             </div>
             
             <div class="entree">
-                <h1>vous recherchez une développeuse full stack?</h1>
+                <h1><a href="#contact">turki donia</a></h1>
+                <h2>vous recherchez une développeuse full stack?</h2>
                 <p>Découvrez mon site portfolio et plongez dans un univers où créativité et professionalisme se rencontrent!</p>
             </div>
             
-            <div class="fleche">
-                <a href=""><img src="./favicon/fleche.svg" alt="fleche en bas"/></a>
+            
+                
+            <div class="absolut-link">
+                <a href="#about">
+                    <svg width="70" version="1.1" id="icons_1_" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
+                        viewBox="0 0 128 128" style="enable-background:new 0 0 128 128" xml:space="preserve">
+                        <g id="row2_1_">
+                            <g id="_x35__3_">
+                                <path class="color-white"
+                                    d="M64 .3C28.7.3 0 28.8 0 64s28.7 63.7 64 63.7 64-28.5 64-63.7S99.3.3 64 .3zm0 121C32.2 121.3 6.4 95.7 6.4 64 6.4 32.3 32.2 6.7 64 6.7s57.6 25.7 57.6 57.3c0 31.7-25.8 57.3-57.6 57.3zm21.7-63.2L70.4 70.3V41.7c0-2.2-2.3-3.2-4.4-3.2h-4c-2.2 0-3.9 1.8-3.9 3.9v28.4L42.3 58.1c-2.2 0-3.9 1.8-3.9 3.9v7.1L64 95.8l25.6-26.7V62c0-2.2-1.8-3.9-3.9-3.9z"
+                                    id="down_1_" />
+                            </g>
+                        </g>
+                    </svg>
+                </a>
             </div>
+
+            
         </header>
         
 
         <main>
         
-            <section class="about">
+            <section class="about" id="about">
                 <h1>À propos</h1>
                 <p>Conceptrice développeuse d'application junior, je suis dynamique et j'aime travailler en équipe pour relever des challenges techniques. J'ai une bonne maitrise des outils de développement et je suis en constante recherche d'apprentissage.
                 Découvrez-en plus mon profil lors d'une rencontre!</p>
             </section>
 
-            <section class="skills">
+            <section class="skills" id="skills">
                 <h1>Compétences</h1>
-                
-                
+                <i class="fa-solid fa-graduation-cap"></i>
             </section>
 
-            <section class="experience">
+
+            <section class="experience" id="experience">
                 <p>Télechargez mon CV</p>
-                <a href="cv.pdf"><input type="text" value="cliquer ici"></a>
+                <a href="#CV.pdf"><input type="text" placeholder="cliquer ici"></a>
             </section>
 
-            <section class="projects">
+            <section class="projects" id="projects">
                 <h2>Projets</h2>
                 <div class="projet1"></div>
                 <div class="projet2"></div>
@@ -69,25 +91,29 @@
                 <div class="projet4"></div>
             </section>
 
-            <section class="contact">
-                <h2>Contact</h2>
-                <form action="/ma-page-de-traitement" method="post">
-                    <ul>
-                      <li>
-                        <label for="name">Nom&nbsp;:</label>
-                        <input type="text" id="name" name="user_name" />
-                      </li>
-                      <li>
-                        <label for="mail">E-mail&nbsp;:</label>
-                        <input type="email" id="mail" name="user_mail" />
-                      </li>
-                      <li>
-                        <label for="msg">Message&nbsp;:</label>
-                        <textarea id="msg" name="user_message"></textarea>
-                      </li>
-                    </ul>
+            <section class="contact" id="contact">
+               
+                  <form>
+                    <h3>CONTACTEZ NOUS !</h3>
+                    <div>
+                       <input type="text" id="nom" placeholder="Qui êtes-vous ?"/>
+                        <label for="nom">Nom</label>
+                    </div>
+                    <div>
+                       <input type="text" id="prenom" placeholder="Qui êtes-vous ?"/>
+                            <label for="prenom">Prénom</label>
+                    </div>
+                    <div>
+                       <input type="text" id="mail" placeholder="Quelle est votre adresse Mail ?"/>
+                            <label for="mail">Mail</label>
+                    </div>
+                    <div>
+                       <textarea id="msg"  placeholder="Tapez ici votre message"></textarea>
+                       <label for="msg">Message</label>
+                    </div>
+                    <input class="button" type="submit" value="Envoyer" />
                   </form>
-                  
+                   
                 
             </section>
         </main>
@@ -100,18 +126,18 @@
                 </a></p>
         </footer>
 
-    <script>
-        // Vous pouvez ajouter du JavaScript ici pour des fonctionnalités interactives
-        // Par exemple, un smooth scroll pour la navigation :
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+        <script>
+            // Vous pouvez ajouter du JavaScript ici pour des fonctionnalités interactives
+            // Par exemple, un smooth scroll pour la navigation :
+             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                 anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
+                    });
                 });
             });
-        });
-    </script>
+        </script>
     </div>
 </body>
 </html>

@@ -26,3 +26,12 @@ $('textarea').focus(function () { // Au clic sur le textarea Message
     $(this).parent().css('margin-bottom','100px'); // Rajout de la marge pour baisser le bouton submit
   }
 });
+// by rotating the text opposite the orbit, we can keep
+// it readable throughout the rotation
+
+TweenMax.set("#demo", {xPercent:-50, yPercent:-50});
+var tl = new TimelineMax({repeat:-1});
+
+tl.to(".planet", 10, {rotation: 360, svgOrigin:"500 500", ease:Linear.easeNone});	
+tl.to(".planet text", 10, {rotation: -360, transformOrigin:"center center", 
+  ease:Linear.easeNone}, 0);	

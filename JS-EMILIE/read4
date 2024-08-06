@@ -1,0 +1,21 @@
+Pratique - 4
+
+Créez une page HTML avec :
+Un champ de texte pour entrer des tâches.
+Un bouton pour ajouter des tâches à une liste.
+Un mécanisme pour supprimer des tâches de la liste en
+cliquant dessus.
+
+Exercice a publier sur Github avec les parties HTML, CSS et
+javascript
+
+ps : réfléchissez à votre algorithme avant de vous lancer dans
+le code
+
+
+
+Pour chaque tâche de la liste ajouter devant le nom de la
+tâche une case que l’on peut cocher pour indiquer que la
+tâche a bien été réalisée et après le nom de la tâche une
+icone de poubelle qui supprime la tâche lorsqu’on clique
+dessus.

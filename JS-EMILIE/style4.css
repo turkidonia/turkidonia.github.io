@@ -29,17 +29,19 @@ ul {
     background-color: rgb(247, 247, 134);
 }
 
-.task {
+li {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 10px;
+    padding: 10px;
+    background: #f9f9f9;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
 }
 .delete-icon {
     cursor: pointer;
-    color: rgb(255, 0, 153);  
+    color: rgb(43, 0, 255);  
 }
 
 .delete-icon:hover {
-    color: darkred;
+    color: red;
 }

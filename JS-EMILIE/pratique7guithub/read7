@@ -1,0 +1,14 @@
+Créez un formulaire de contact avec les champs noms,
+téléphone, email, message et fichier joint.
+Utilisez try, catch et finally pour valider les entrées et
+gérer les erreurs.
+Affichez les messages d'erreur appropriés à l'utilisateur.
+
+Bonus : ajouter la restriction suivante sur le fichier joint :
+format pdf uniquement de moins de 3Mo.
+
+Exercice a publier sur Github avec les parties HTML, CSS et
+javascript
+
+ps : réfléchissez à votre algorithme avant de vous lancer dans
+le code

@@ -34,4 +34,21 @@ var tl = new TimelineMax({repeat:-1});
 
 tl.to(".planet", 10, {rotation: 360, svgOrigin:"500 500", ease:Linear.easeNone});	
 tl.to(".planet text", 10, {rotation: -360, transformOrigin:"center center", 
-  ease:Linear.easeNone}, 0);	
+  ease:Linear.easeNone}, 0);
+  let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("diapo")[0].getElementsByTagName("img");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}	

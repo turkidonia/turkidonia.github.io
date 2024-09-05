@@ -20,7 +20,7 @@ ajoutTache.addEventListener("click", function() {
         checkbox.type = "checkbox";
 
         // Créer une icône de poubelle
-        var deleteIcon = document.createElement('span');
+        let deleteIcon = document.createElement('span');
         deleteIcon.innerHTML = "<i class='fa-solid fa-trash'></i>";
         deleteIcon.classList.add("delete-icon");
 
